@@ -81,7 +81,7 @@ s.platform     =  :ios, "10.0"
 #s.source        = { :git => "https://github.com/littlepod/ThreeRingControlSDK.git", :tag => "1.0.1" }
 #s.source        = { :http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
 
-s.source       = {:http => "https://github.com/littlepod/DemoSmartPod/SmartViewSDK-iOS.zip, :tag => "1.0.0" }
+s.source       = {:http => "https://github.com/littlepod/DemoSmartPod/SmartViewSDK-iOS.zip" }
 
 #s.source       = { :git => "http://EXAMPLE/ThreeRingControlSDK.git", :tag => "#{s.version}" }
 
