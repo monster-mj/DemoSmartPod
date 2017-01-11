@@ -100,12 +100,13 @@ s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwAD
 
 # SmartViewSDK-iOS-XCode8-3/SmartViewSDK-iOS/iphoneos+iphonesimulator
 
-#s.source_files  = "SmartViewSDK-iOS-XCode8-3/SmartViewSDK-iOS/iphoneos/SmartView.framework/Headers/*.h"
-s.source_files  = "SmartViewSDK-iOS/iphoneos/SmartView.framework/Headers/*.h"
+# *** iphone + simulator
+s.source_files  = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
+s.preserve_paths    = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
 
-#s.preserve_paths    = "SmartViewSDK-iOS-XCode8-3/SmartViewSDK-iOS/iphoneos/SmartView.framework"
-s.preserve_paths    = "SmartViewSDK-iOS/iphoneos/SmartView.framework"
-
+# *** for iphone only
+#s.source_files  = "SmartViewSDK-iOS/iphoneos/SmartView.framework/Headers/*.h"
+#s.preserve_paths    = "SmartViewSDK-iOS/iphoneos/SmartView.framework"
 #s.vendored_frameworks   = "SmartViewSDK-iOS-XCode8-3/SmartViewSDK-iOS/iphoneos/SmartView.framework"
 
 #s.source_files  = "Classes", "Classes/**/*.{h,m}"
