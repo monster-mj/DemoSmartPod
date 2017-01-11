@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
 #  summary should be tweet-length, and the description more in depth.
 #
 
-s.name         = "SmartViewSDK"
+s.name         = "SmartViewSDK-iOS"
 s.version      = "1.0.0"
-s.summary      = "A three-ring control like the Activity status bars"
+s.summary      = " this is test and trial only A smartview test app like the Activity status bars"
 s.description  = "The three-ring is a completely customizable widget that can be used in any iOS app. It also plays a little victory fanfare."
 
 # This description is used to generate tags and improve search results.
@@ -79,7 +79,9 @@ s.platform     =  :ios, "10.0"
 #
 #s.source       = { :path => '.' }
 #s.source        = { :git => "https://github.com/littlepod/ThreeRingControlSDK.git", :tag => "1.0.1" }
-s.source        = { :http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
+#s.source        = { :http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
+
+s.source       = {:http => "https://github.com/littlepod/DemoSmartPod/SmartViewSDK-iOS.zip, :tag => "1.0.0" }
 
 #s.source       = { :git => "http://EXAMPLE/ThreeRingControlSDK.git", :tag => "#{s.version}" }
 
@@ -91,7 +93,9 @@ s.source        = { :http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAw
 #  For header files it will include any header in the folder.
 #  Not including the public_header_files will make all headers public.
 #
-s.source_files = "SmartViewSDK", "SmartViewSDK/Headers/*.h"
+s.source_files  = "SmartViewSDK-iOS", "SmartViewSDK-iOS/SmartView.framework/Headers/*.h"
+s.preserve_paths    = "SmartViewSDK-iOS/SmartView.framework"
+s.vendored_frameworks   = "SmartViewSDK-iOS/SmartView.framework"
 
 #s.source_files  = "Classes", "Classes/**/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
