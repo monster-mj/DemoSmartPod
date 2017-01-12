@@ -22,13 +22,7 @@
                  "name": "Core",
                  "source_files": "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h",
                  "preserve_paths": "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework",
-                 "requires_arc": true,
-                 "vendored_frameworks": [
-                                         "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
-                                         ],
-                 "libraries": [
-                               "c++"
-                               ],
+                 "vendored_frameworks": "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework",
                  "resources": [
                  
                  ]
