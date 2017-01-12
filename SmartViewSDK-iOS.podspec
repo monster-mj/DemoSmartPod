@@ -100,15 +100,15 @@ s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwAD
 
 # SmartViewSDK-iOS-XCode8-3/SmartViewSDK-iOS/iphoneos+iphonesimulator
 
-# *** iphone + simulator -- Working but not complete
-#s.source_files  = "SmartViewSDK-iOS", "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
-#s.preserve_paths    = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
-#s.vendored_frameworks   = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
+# *** iphone + simulator -- Working  lint pass
+s.source_files  = "SmartViewSDK-iOS", "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
+s.preserve_paths    = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
+s.vendored_frameworks   = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
 
 # **** temp try out -- NOT working
-s.source_files  = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
-s.preserve_paths    = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
-s.vendored_frameworks   = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos/SmartView.framework"
+#s.source_files  = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
+#s.preserve_paths    = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
+#s.vendored_frameworks   = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos/SmartView.framework"
 
 # *** for iphone only
 #s.source_files  = "SmartViewSDK-iOS/iphoneos/SmartView.framework/Headers/*.h"
