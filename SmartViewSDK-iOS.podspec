@@ -37,8 +37,8 @@ s.homepage     = "http://raywenderlich.com"
 #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
 #
 
-s.license      = "MIT"
-# s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+#s.license      = "MIT"
+s.license      = { :type => "Commercial", :file => "http://developer.samsung.com/end-user-license" }
 
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,16 +79,16 @@ s.platform     =  :ios, "10.0"
 #
 #s.source       = { :path => '.' }
 #s.source        = { :git => "https://github.com/littlepod/ThreeRingControlSDK.git", :tag => "1.0.1" }
-#s.source        = { :http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
+
 
 # *** trying to use .zip from git repo -- not working-- as .zip download is unable to open
-#s.source       = {:http => "https://github.com/littlepod/DemoSmartPod/blob/master/SmartViewSDK-iOS.zip" }
+s.source       = {:http => "https://raw.githubusercontent.com/littlepod/DemoSmartPod/master/SmartViewSDK/SmartViewSDK-iOS.zip" }
 
-s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
+#s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
 
 #s.source       = { :git => "http://EXAMPLE/ThreeRingControlSDK.git", :tag => "#{s.version}" }
 
-
+#https://raw.githubusercontent.com/littlepod/DemoSmartPod/master/SmartViewSDK/SmartViewSDK-iOS.zip
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -101,19 +101,20 @@ s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwAD
 # SmartViewSDK-iOS-XCode8-3/SmartViewSDK-iOS/iphoneos+iphonesimulator
 
 # *** iphone + simulator -- Working  lint pass
-s.source_files  = "SmartViewSDK-iOS", "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
-s.preserve_paths    = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
-s.vendored_frameworks   = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
+#s.source_files  = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
+#s.preserve_paths    = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
+#s.vendored_frameworks   = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
 
 # **** temp try out -- NOT working
-#s.source_files  = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
-#s.preserve_paths    = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
-#s.vendored_frameworks   = "SmartViewSDK-iOS-XCode8.1-2.3.8/SmartViewSDK-iOS/iphoneos/SmartView.framework"
+#s.source_files  = "iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
+#s.preserve_paths    = "iphoneos+iphonesimulator/SmartView.framework"
+#s.vendored_frameworks   = "iphoneos+iphonesimulator/SmartView.framework"
 
 # *** for iphone only
-#s.source_files  = "SmartViewSDK-iOS/iphoneos/SmartView.framework/Headers/*.h"
-#s.preserve_paths    = "SmartViewSDK-iOS/iphoneos/SmartView.framework"
-#s.vendored_frameworks   = "SmartViewSDK-iOS-XCode8-3/SmartViewSDK-iOS/iphoneos/SmartView.framework"
+s.source_files  = "SmartViewSDK-iOS/SmartView.framework/Headers/*.h"
+s.preserve_paths    = "SmartViewSDK-iOS/SmartView.framework"
+s.vendored_frameworks   = "SmartViewSDK-iOS/SmartView.framework"
+#s.frameworks = 'SmartView.framework'
 
 #s.source_files  = "Classes", "Classes/**/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
@@ -159,6 +160,8 @@ s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 # s.requires_arc = true
 
 # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '/Applications/Xcode8.1.app/Contents/Developer/Library/Frameworks' }
+
 # s.dependency "JSONKit", "~> 1.4"
 
 end
