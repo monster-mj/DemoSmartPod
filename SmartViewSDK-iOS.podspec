@@ -82,9 +82,9 @@ s.platform     =  :ios, "10.0"
 
 
 # *** trying to use .zip from git repo -- not working-- as .zip download is unable to open
-s.source       = {:http => "https://raw.githubusercontent.com/littlepod/DemoSmartPod/master/SmartViewSDK/SmartViewSDK-iOS.zip" }
+#s.source       = {:http => "https://raw.githubusercontent.com/littlepod/DemoSmartPod/master/SmartViewSDK/SmartViewSDK-iOS.zip" }
 
-#s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
+s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
 
 #s.source       = { :git => "http://EXAMPLE/ThreeRingControlSDK.git", :tag => "#{s.version}" }
 
@@ -102,8 +102,8 @@ s.source       = {:http => "https://raw.githubusercontent.com/littlepod/DemoSmar
 
 # *** iphone + simulator -- Working  lint pass
 #s.source_files  = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
-#s.preserve_paths    = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
-#s.vendored_frameworks   = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
+s.preserve_paths    = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
+s.vendored_frameworks   = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
 
 # **** temp try out -- NOT working
 #s.source_files  = "iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
@@ -111,9 +111,9 @@ s.source       = {:http => "https://raw.githubusercontent.com/littlepod/DemoSmar
 #s.vendored_frameworks   = "iphoneos+iphonesimulator/SmartView.framework"
 
 # *** for iphone only
-s.source_files  = "SmartViewSDK-iOS/SmartView.framework/Headers/*.h"
-s.preserve_paths    = "SmartViewSDK-iOS/SmartView.framework"
-s.vendored_frameworks   = "SmartViewSDK-iOS/SmartView.framework"
+#s.source_files  = "SmartViewSDK-iOS/SmartView.framework/Headers/*.h"
+#s.preserve_paths    = "SmartViewSDK-iOS/SmartView.framework"
+#s.vendored_frameworks   = "SmartViewSDK-iOS/SmartView.framework"
 #s.frameworks = 'SmartView.framework'
 
 #s.source_files  = "Classes", "Classes/**/*.{h,m}"
