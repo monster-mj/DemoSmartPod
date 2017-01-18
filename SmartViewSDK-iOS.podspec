@@ -1,65 +1,28 @@
-#
-#  Be sure to run `pod spec lint ThreeRingControlSDK.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
 
 Pod::Spec.new do |s|
 
-# ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
-#  These will help people to find your library, and whilst it
-#  can feel like a chore to fill in it's definitely to your advantage. The
-#  summary should be tweet-length, and the description more in depth.
-#
-
 s.name         = "SmartViewSDK-iOS"
 s.version      = "1.0.0"
 s.summary      = " this is test and trial only A smartview test app like the Activity status bars"
-s.description  = "The three-ring is a completely customizable widget that can be used in any iOS app. It also plays a little victory fanfare."
+s.description  = "This is a pod spec file for SmartView SDK framework. This podspec file may or may not work at present as development and test is under progress."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-s.homepage     = "http://raywenderlich.com"
+
+s.homepage     = "http://developer.samsung.com/home.do"
 
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-
-# ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  Licensing your code is important. See http://choosealicense.com for more info.
-#  CocoaPods will detect a license file if there is a named LICENSE*
-#  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-#
 
 #s.license      = "MIT"
 s.license      = { :type => "Commercial", :file => "http://developer.samsung.com/end-user-license" }
 
 
-# ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  Specify the authors of the library, with email addresses. Email addresses
-#  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-#  accepts just a name if you'd rather not provide an email address.
-#
-#  Specify a social_media_url where others can refer to, for example a twitter
-#  profile URL.
-#
 
 s.author             = "Om"
 # Or just: s.author    = ""
 # s.authors            = { "" => "" }
 # s.social_media_url   = "http://twitter.com/"
 
-# ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  If this Pod runs only on iOS or OS X, then specify the platform and
-#  the deployment target. You can optionally include the target after the platform.
 #
 s.platform     =  :ios, "10.0"
 # s.platform     = :ios
@@ -88,7 +51,7 @@ s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwAD
 
 #s.source       = { :git => "http://EXAMPLE/ThreeRingControlSDK.git", :tag => "#{s.version}" }
 
-#https://raw.githubusercontent.com/littlepod/DemoSmartPod/master/SmartViewSDK/SmartViewSDK-iOS.zip
+
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -105,10 +68,14 @@ s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwAD
 s.preserve_paths    = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
 s.vendored_frameworks   = "SmartViewSDK-iOS/iphoneos+iphonesimulator/SmartView.framework"
 
+
+
 # **** temp try out -- NOT working
 #s.source_files  = "iphoneos+iphonesimulator/SmartView.framework/Headers/*.h"
 #s.preserve_paths    = "iphoneos+iphonesimulator/SmartView.framework"
 #s.vendored_frameworks   = "iphoneos+iphonesimulator/SmartView.framework"
+
+
 
 # *** for iphone only
 #s.source_files  = "SmartViewSDK-iOS/SmartView.framework/Headers/*.h"
