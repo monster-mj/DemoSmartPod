@@ -12,7 +12,7 @@
   "source": {
     "http": "http://192.168.0.13:8080/iOS/SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod.zip"
   },
-  "vendored_frameworks" : "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework",
+  "vendored_frameworks" : "SmartView.framework",
   "platforms": {
     "ios": "8.0"
   },
