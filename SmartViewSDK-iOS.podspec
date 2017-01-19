@@ -47,7 +47,7 @@ s.platform     =  :ios, "10.0"
 # *** trying to use .zip from git repo -- not working-- as .zip download is unable to open
 #s.source       = {:http => "https://raw.githubusercontent.com/littlepod/DemoSmartPod/master/SmartViewSDK/SmartViewSDK-iOS.zip" }
 
-s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8.zip" }
+s.source       = {:http => "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod.zip" }
 
 #s.source       = { :git => "http://EXAMPLE/ThreeRingControlSDK.git", :tag => "#{s.version}" }
 
