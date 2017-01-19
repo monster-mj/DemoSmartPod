@@ -10,7 +10,7 @@
   "homepage": "http://developer.samsung.com/tv/develop/extension-libraries/smart-view-sdk/introduction",
   "authors": "Samsung",
   "source": {
-    "http": "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod.zip"
+    "http": "http://192.168.0.13:8080/iOS/SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod.zip"
   },
   "vendored_frameworks" : "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework",
   "platforms": {
