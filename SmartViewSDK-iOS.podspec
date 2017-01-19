@@ -1,5 +1,5 @@
 {
-  "name": "SmartViewSDK",
+  "name": "SmartViewSDK-iOS",
   "version": "2.3.8",
   "license": {
     "type": "Commercial",
