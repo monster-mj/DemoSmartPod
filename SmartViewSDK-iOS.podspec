@@ -24,10 +24,10 @@
     {
       "name": "Core",
       "source_files": "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework/Headers/*.h",
-      "preserve_paths": "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework/",
+      "preserve_paths": "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework",
       "requires_arc": true,
       "vendored_frameworks": [
-        "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework/"
+        "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework"
       ],
       "libraries": [
       ],
