@@ -12,24 +12,11 @@
   "source": {
     "http": "http://sdf.samsungcloudcdn.com/Public/UwBWAEMAMAAwADAAMAAyAA==/MwA3ADgANQBvAGEAYQA1ADkANgBlADcAZwA=/SmartViewSDK/SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod.zip"
   },
+  "vendored_frameworks" : "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework",
   "platforms": {
     "ios": "8.0"
   },
   "xcconfig": {
   },
-  "subspecs": [
-    {
-      "name": "Core",
-      "source_files": "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework/Headers/*.h",
-      "preserve_paths": "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework",
-      "requires_arc": true,
-      "vendored_frameworks": [
-        "SmartViewSDK-iOS-XCode8.1-2.3.8-cocoapod/SmartView.framework"
-      ],
-      "libraries": [
-      ],
-      "resources": [
-      ]
-    }
-  ]
+
 }
