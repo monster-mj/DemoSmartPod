@@ -6,8 +6,7 @@
     "file": "LICENSE"
   },
   "summary": "Framework for Smart View SDK",
-  "description": "A Smart View SDK powered app provides separate views that are connected and running on different devices. 
- The TV version displays a public view of the app that can be enjoyed by an audience. Mobile devices display a private view for individuals or can be used to control the action on the Smart TV. All devices (and the TV) are connected and can communicate with each other.",
+  "description": "A Smart View SDK powered app provides separate views that are connected and running on different devices.\nThe TV version displays a public view of the app that can be enjoyed by an audience. Mobile devices display a private view for individuals or can be used to control the action on the Smart TV. All devices (and the TV) are connected and can communicate with each other.",
   "homepage": "http://developer.samsung.com/tv/develop/extension-libraries/smart-view-sdk/introduction",
   "authors": "Samsung",
   "source": {
